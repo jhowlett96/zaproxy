@@ -128,6 +128,9 @@ public class RuleConfigParam extends AbstractParam {
                 this.ruleConfigs.put(rc.getKey(), rc);
             }
         }
+        //TODO: Lines below used to simulate -configfile 
+/*        this.addRuleConfig(new RuleConfig("rules.activecsrf.regex", "MISSING_OR_INCORRECT_CSRF_TOKEN"));*/
+/*        this.addRuleConfig(new RuleConfig("rules.activecsrf.skipValues", "Clear,Back,Cancel,Upload image,Upload PDF,Upload logo"));*/
     }
 
     public void addRuleConfig(RuleConfig rc) {

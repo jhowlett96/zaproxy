@@ -318,11 +318,14 @@ public class SpiderThread extends ScanThread implements SpiderListener {
             log.debug("Adding seed for Scan of all in scope.");
             nodesInScope = Model.getSingleton().getSession().getNodesInScopeFromSiteTree();
         }
-
-        if (!nodesInScope.isEmpty()) {
-            for (SiteNode node : nodesInScope) {
-                addSeed(node);
-            }
+        
+        //TODO:SJH this line is used to remove seed URLs
+        if(false) {
+        	if (!nodesInScope.isEmpty()) {
+        		for (SiteNode node : nodesInScope) {
+        			addSeed(node);
+        		}
+                }
         }
     }
 
